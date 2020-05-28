@@ -1,0 +1,12 @@
+
+
+
+{{range .}}
+   
+ Dear client {{ .Company_name }}    
+ we are sorry to inform you that your ride number {{ .Request_id }} from {{ .Departure_addr }}  to {{ .Arrival_addr }} 
+  attached to the driver {{ .Driver_full_name}}  is cancelled.
+ 
+
+{{end}}
+

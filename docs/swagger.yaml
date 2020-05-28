@@ -1,0 +1,590 @@
+basePath: /
+definitions:
+  Models.Driver:
+    properties:
+      address_pickup_complement:
+        type: string
+      arrival_addr:
+        type: string
+      cancel_text:
+        type: string
+      canceladditional_text:
+        type: string
+      client_name:
+        type: string
+      comment:
+        type: string
+      company_name:
+        type: string
+      date_time:
+        type: string
+      deliveryride_id:
+        type: string
+      departure_addr:
+        type: string
+      driver_full_name:
+        type: string
+      driver_sirenid:
+        type: string
+      driverphone_number:
+        type: string
+      estimate_duration:
+        type: string
+      id:
+        type: integer
+      modification_text:
+        type: string
+      passanger_name:
+        type: string
+      request_id:
+        type: string
+      request_modification:
+        type: string
+      requestes_timate_pickup_date:
+        type: string
+      reservation_price:
+        type: string
+      total_price:
+        type: string
+      vehicle_type:
+        type: string
+    type: object
+host: backendtmpl.herokuapp.com
+info:
+  contact:
+    email: nader@craftfoundry.tech
+    name: Essami nader
+  description: This is a sample service for generating templates
+  license:
+    name: Apache 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Templates Manager API
+  version: "1.0"
+paths:
+  /Cinvoice:
+    get:
+      consumes:
+      - text/html
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Customer Invoice
+      tags:
+      - Templates
+  /acc:
+    get:
+      consumes:
+      - application/json
+      description: Send To Backend user
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Confirm Account
+      tags:
+      - Templates
+  /bwl:
+    get:
+      consumes:
+      - application/json
+      description: welcome pack
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Welcome Backend user
+      tags:
+      - Templates
+  /cokride:
+    get:
+      consumes:
+      - application/json
+      description: Send To Company When Ride is Confirmed
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Ride confirmation
+      tags:
+      - Templates
+  /colate:
+    get:
+      consumes:
+      - application/json
+      description: Send To Company when Driver is late
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Driver Late
+      tags:
+      - Templates
+  /cono:
+    get:
+      consumes:
+      - application/json
+      description: Send To Company When there is no driver
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: No Driver
+      tags:
+      - Templates
+  /conodelivery:
+    get:
+      consumes:
+      - application/json
+      description: Send To Company When Cancelled their Delivery
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Cancelled delivery
+      tags:
+      - Templates
+  /conoride:
+    get:
+      consumes:
+      - application/json
+      description: Send To Company When their ride is Cancelled
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Ride cancellation
+      tags:
+      - Templates
+  /coyesdelivery:
+    get:
+      consumes:
+      - application/json
+      description: Send to Company When Their Delivery is Confirmed
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Delivery Confirmation
+      tags:
+      - Templates
+  /cwl:
+    get:
+      consumes:
+      - application/json
+      description: welcome pack
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Welcome Company
+      tags:
+      - Templates
+  /dnc:
+    get:
+      consumes:
+      - application/json
+      description: Send For Backend User
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: No Access
+      tags:
+      - Templates
+  /dwl:
+    get:
+      consumes:
+      - application/json
+      description: welcome pack
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Welcome driver
+      tags:
+      - Templates
+  /fex:
+    get:
+      consumes:
+      - application/json
+      description: Manage Document
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Expired Document
+      tags:
+      - Templates
+  /fre:
+    get:
+      consumes:
+      - application/json
+      description: Manage Document
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Refused Files
+      tags:
+      - Templates
+  /fva:
+    get:
+      consumes:
+      - application/json
+      description: Manage Document
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Validated File
+      tags:
+      - Templates
+  /invoice:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Driver Invoice Template
+      tags:
+      - Templates
+  /late:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: driver alert late  template
+      tags:
+      - Templates
+  /latecustomer:
+    get:
+      consumes:
+      - text/html
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Customer Late
+      tags:
+      - Templates
+  /no:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: No driver template
+      tags:
+      - Templates
+  /noclient:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: client cancel ride template
+      tags:
+      - Templates
+  /nocustomer:
+    get:
+      consumes:
+      - text/html
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: No customer
+      tags:
+      - Templates
+  /nod:
+    get:
+      consumes:
+      - text/html
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Driver Cancel Client Ride
+      tags:
+      - Templates
+  /nodelivery:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Cancel delivery template
+      tags:
+      - Templates
+  /nodeliveryc:
+    get:
+      consumes:
+      - text/html
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Delivey Cancelled
+      tags:
+      - Templates
+  /noride:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Ride canceled Template
+      tags:
+      - Templates
+  /noridec:
+    get:
+      consumes:
+      - text/html
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Driver  Cancel Ride
+      tags:
+      - Templates
+  /noy:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: not way driver template
+      tags:
+      - Templates
+  /okride:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Confirmed Ride template
+      tags:
+      - Templates
+  /okridec:
+    get:
+      consumes:
+      - text/html
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Driver Confirm Ride
+      tags:
+      - Templates
+  /prwl:
+    get:
+      consumes:
+      - application/json
+      description: Welcome pack
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Welcome parrinage
+      tags:
+      - Templates
+  /pswl:
+    get:
+      consumes:
+      - application/json
+      description: welcome pack
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Welcome passenger
+      tags:
+      - Templates
+  /us:
+    get:
+      consumes:
+      - application/json
+      description: Send To Backend user
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Permission for acces
+      tags:
+      - Templates
+  /yesdelic:
+    get:
+      consumes:
+      - text/html
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Driver Confirm Delivery
+      tags:
+      - Templates
+  /yesdelivery:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Confirmed Delivery Template
+      tags:
+      - Templates
+  /yesrd:
+    get:
+      consumes:
+      - application/json
+      description: generating template  which will be sended to driver
+      produces:
+      - text/html
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/Models.Driver'
+      summary: Ride confirmed by client template
+      tags:
+      - Templates
+swagger: "2.0"
