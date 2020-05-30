@@ -1,7 +1,5 @@
 package Models
 
-import "golang.org/x/net/idna"
-
 type Driver struct {
 	Id                           int
 	Driver_full_name             string
@@ -26,14 +24,4 @@ type Driver struct {
 	Driver_sirenid               string
 	Client_name                  string
 	Total_price                  string
-}
-// model template
-// welcome : variables model template
-type Template struct{
-
-  id
-  name   
-  content text
-  saascompanyid
-  variables example : Driver_full_name .. {} jsonType
 }

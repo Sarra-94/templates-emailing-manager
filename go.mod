@@ -18,7 +18,7 @@ require (
 	github.com/swaggo/swag v1.6.5
 	github.com/unrolled/render v1.0.3
 	github.com/urfave/cli v1.22.4 // indirect
-	golang.org/x/net v0.0.0-20200505041828-1ed23360d12c // indirect
+	golang.org/x/net v0.0.0-20200505041828-1ed23360d12c
 	golang.org/x/tools v0.0.0-20200505023115-26f46d2f7ef8 // indirect
 	gopkg.in/yaml.v2 v2.2.8 // indirect
 )
